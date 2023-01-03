@@ -61,8 +61,8 @@ public class FamilleResource {
         for (FamilleEntity famille : familleRepository.getFamillesByClassification(id.toString())) {
             FamilleDto familleDto = new FamilleDto(famille);
             String uriBase = uriInfo.getRequestUriBuilder().build().toString();
-            familleDto.addLink("all", uriBase.replace("/classification", "")); // probleme d'id
-            familleDto.addLink("self", uriBase + "/" + famille.getId());
+            familleDto.addLink("all", uriBase.replace("/classification/" + id, ""));
+            familleDto.addLink("self", uriBase.replace("/classification/" + id, "/") +  + famille.getId());
             familleDto.addLink("classification", uriBase.replace("/familles/classification", "/classifications"));
             familles.add(familleDto);
         }
