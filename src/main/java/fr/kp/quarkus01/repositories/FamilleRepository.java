@@ -1,6 +1,6 @@
-package fr.kp.repositories;
+package fr.kp.quarkus01.repositories;
 
-import fr.kp.entities.FamilleEntity;
+import fr.kp.quarkus01.entities.FamilleEntity;
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 
 import javax.enterprise.context.ApplicationScoped;

@@ -1,4 +1,4 @@
-package fr.kp.ressources;
+package fr.kp.quarkus01.ressources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

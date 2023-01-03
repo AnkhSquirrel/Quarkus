@@ -1,4 +1,4 @@
-package fr.kp;
+package fr.kp.quarkus01;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 

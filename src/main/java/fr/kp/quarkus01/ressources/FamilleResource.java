@@ -1,7 +1,7 @@
-package fr.kp.ressources;
+package fr.kp.quarkus01.ressources;
 
-import fr.kp.entities.FamilleEntity;
-import fr.kp.repositories.FamilleRepository;
+import fr.kp.quarkus01.entities.FamilleEntity;
+import fr.kp.quarkus01.repositories.FamilleRepository;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import javax.inject.Inject;
@@ -23,7 +23,12 @@ public class FamilleResource {
 
     @GET
     public Response getAll(){
+        System.out.println("----------------------------- getAll 1");
+
         List<FamilleEntity> familles = familleRepository.listAll();
+
+        System.out.println("----------------------------- getAll 2");
+
         return Response.ok(familles).build();
     }
 

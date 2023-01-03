@@ -1,4 +1,4 @@
-package fr.kp.entities;
+package fr.kp.quarkus01.entities;
 
 import lombok.Data;
 
