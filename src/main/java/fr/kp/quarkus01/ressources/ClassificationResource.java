@@ -34,6 +34,7 @@ public class ClassificationResource {
             String uriBase = uriInfo.getRequestUriBuilder().build().toString();
             classificationDto.addLink("all", uriBase);
             classificationDto.addLink("self", uriBase + "/" + classification.getId());
+            classificationDto.addLink("familles", uriBase.replace("/classifications", "/familles") + "/classification" + "/" + classification.getId());
             classifications.add(classificationDto);
         }
         return Response.ok(classifications).build();
